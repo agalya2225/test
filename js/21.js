@@ -24,4 +24,4 @@ e.appendChild(f1)
 e.appendChild(f2)
 document.getElementById("div").appendChild(e)
 //             
-console.log("tes")
+// console.log("tes")
