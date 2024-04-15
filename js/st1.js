@@ -1,4 +1,4 @@
-import {arr} from "../19.js";
+import {arr} from "../js/19.js";
 document.getElementById("h1").addEventListener("click",()=>{
     // console.log("10")
     let w=arr.map((a)=>{

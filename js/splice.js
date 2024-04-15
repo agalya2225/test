@@ -1,5 +1,5 @@
 //splice 0 and 1
-import { arr } from "./19.js";
+import { arr } from "../js/19.js";
 let spl = {
     stuid: 2,
     stuName: "splice",
@@ -59,10 +59,10 @@ document.getElementById("update").addEventListener("click", () => {
             // update more than one
 document.getElementById('more').addEventListener('click',()=>{
     let more=arr.map((a)=>{
-      a.degree=='bsc'?a.degree='msc': // ternary
+      a.degree=='bsc'?a.degree='msc': fail // ternary
     //     if(a.degree=='bsc'){
     //     a.degree='msc'}
-       console.log(arr) 
+    //    console.log(arr) 
        return  `<br> <img src="${a.image}" height="100px" width="200px"> <br> stuid:${a.stuid} <br> stuName:${a.stuName} <br> stuDob:${a.stuDob} <br> stuAge:${a.stuAge} <br> stucont:${a.stuCont} <br> degree:${a.degree} <br> hobbies:${a.hobbies}<br> address: <br> street:${a.address.street} doorno:${a.address.doorno} pincode:${a.address.pincode} <hr>`
  }).join(" ")
     document.getElementById("div").innerHTML = `${more}` 
@@ -84,7 +84,7 @@ document.getElementById('search').addEventListener('click',()=>{
 //              sort
 document.getElementById('sort').addEventListener('click',()=>{
  let srt=arr.sort((x,y)=>{
-return ((x.stuName>y.stuName)?-1:0)
+return ((x.stuid>y.stuid)?-1:0)
     })
     console.log(srt)
     document.getElementById("div").innerHTML = srt.map((a)=>{
@@ -92,5 +92,8 @@ return ((x.stuName>y.stuName)?-1:0)
     }).join(" ")
          
 })
+
+
+
 
 

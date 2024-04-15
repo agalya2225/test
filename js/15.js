@@ -44,24 +44,24 @@
 
 //              module of 10
 
-a=567
-let sum=0
-while(a){
-    let rem=a%10
-    console.log(rem)
+// a=567
+// let sum=0
+// while(a){
+//     let rem=a%10
+//     console.log(rem)
 
 
-    sum=sum+rem;
-    console.log(sum)
-    a=Math.floor(a/10)
-}
+//     sum=sum+rem;
+//     console.log(sum)
+//     a=Math.floor(a/10)
+// }
 
-console.log(sum)
+// console.log(sum)
 
 // nested loop
 for(let i=0; i<10; i++){
-    (let r=0; r<i; r--){
-        document.write(`${r}`)
+    for(let j=0; j<i; j--){
+        document.write(`${i}`)
     }
     document.write(`<br`)
 }

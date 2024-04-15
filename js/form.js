@@ -122,5 +122,9 @@ let addItem = (k) => {
         .map((y) => { return y.value })
     }
     console.log(obj)
+    arr.push(obj)
+    document.getElementById('div').innerHTML=arr.map((a)=>{
+        return  `<br>  stuid:${a.stuid} <br> stuName:${a.stuName} <br> stuDob:${a.stuDob} <br> stuAge:${a.stuAge} <br> stucont:${a.stuCont} <br> degree:${a.degree} <br> hobbies:${a.hobbies}<br> <hr>`
+    })
 }
 
